@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Fitline</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Pridi:wght@400;600;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/simplebar.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	<header id="header" class="header">
+		<div class="wrapper">
+			<div class="header__inner">
+				<a href="#" class="header__logo">
+					<picture class="header__logo-pic">
+						<source srcset="img/logo-mobile.png" media="(max-width: 500px)">
+						<img src="img/logo.png" alt="Логотип Fitline">
+					</picture>
+				</a>
+				<div class="header__info">
+					<a href="tel:88008888888 " class="header__phone">8 800 888 88 88</a>
+					<a href="#popup-callback" class="header__btn popup-link">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="banner banner__bg-top">
+		<div class="wrapper">
+			<div class="banner__inner">
+				<div class="banner__info">
+					<h1 class="banner__info-title">Поверните<br> время <span
+							class="banner__info-title_red">вспять!</span>
+					</h1>
+					<p class="banner__info-text">Испытайте неповторимые ощущения совершенства
+						и моментальный эффект на Вашей коже</p>
+					<img src="img/product.png" alt="Сыворотка" class="banner__info-img">
+				</div>
+				<div class="banner__form">
+					<form class="banner__form-body form">
+						<h2 class="form__title">Внимание. Акция!</h2>
+						<p class="form__text">Осталось<span class="form__text-number">13</span> акционных упаковок
+							Ultimate Young (сыворотка)</p>
+						<div class="form__timer">
+							<div class="form__timer-section">
+								<span class="form__timer-time" id="days"></span>
+								<span class="form__timer-time" id="hours"></span>
+								<span class="form__timer-time" id="minutes"></span>
+								<span class="form__timer-time" id="seconds"></span>
+							</div>
+							<ul class="form__timer-date">
+								<li class="form__timer-date_list">Дней</li>
+								<li class="form__timer-date_list">Часов</li>
+								<li class="form__timer-date_list">Минут</li>
+								<li class="form__timer-date_list">Секунд</li>
+							</ul>
+						</div>
+						<div class="form__price">
+							<div class="form__price-last">Обычная цена<p class="form__price-last_many">8000р</p>
+							</div>
+							<div class="form__price-now">Цена со скидкой<p class="form__price-now_many">5000р</p>
+							</div>
+						</div>
+						<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
+						<input type="tel" name="tel" id="tel" class="form__input" placeholder="Ваш номер">
+						<a href="#popup-order" id="#popup-order" class="form__btn popup-link">ЗАКАЗАТЬ СО
+							СКИДКОЙ</a>
+						<label class="form__check">
+							<input class="form__check-checkbox" type="checkbox" name="check" id="check" checked>
+							<span class="form__check-style"></span>
+							Я даю согласие на обработку персональных данных
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="benefits">
+		<div class="wrapper">
+			<div class="benefits__inner">
+				<div class="benefits__info">
+					<h2 class="benefits__info-title">Избавься от морщин за <span
+							class="benefits__info-title_number">3</span>
+						минуты</h2>
+					<p class="benefits__info-subtitle">Сыворотка Ultimate Young поможет воплотить Ваши мечты и
+						желания в
+						реальность!</p>
+					<ul class="benefits__info-list">
+						<li class="benefits__info-list_item">Морщины мгновенно уменьшаются</li>
+						<li class="benefits__info-list_item">Кожа ощутимо подтягивается</li>
+						<li class="benefits__info-list_item">Вы выглядите заметно моложе!</li>
+					</ul>
+					<p class="benefits__info-text">Омоложение без дорогостоящих операций и инъекций с
+						дерматологически
+						протестированной и результативной лифтинг-сывороткой с эффектом ботокса Ultimate Young.</p>
+				</div>
+				<div class="benefits__adv">
+					<img src="img/video.png" alt="Заглушка" class="benefits__adv-img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="products">
+		<div class="products__title">ПОСЛЕ 25 ЛЕТ ВОЗРАСТНЫЕ ИЗМЕНЕНИЯ НЕИЗБЕЖНЫ</div>
+		<div class="products__wrapper">
+			<div class="products__inner">
+				<div class="products__img">
+					<img src="img/products.png" alt="Сыворотка и крем">
+				</div>
+				<div class="products__info">
+					<h4 class="products__info-subtitle"><span class="products__info-subtitle_number">2</span> Шага
+					</h4>
+					<p class="products__info-dist">ДЛЯ ТВОЕЙ БЕЗУПРЕЧНОСТИ</p>
+					<div class="products__info-item ">
+						<p class="products__info-item_list products__info-item_one">Сыворотка Ultimate Yong</p>
+						<p class="products__info-item_dist">Убирает признаки старения</p>
+					</div>
+					<div class="products__info-item ">
+						<p class="products__info-item_list products__info-item_two">Крем 4ever</p>
+						<p class="products__info-item_dist">Закрепляетяет эффект</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="benefits benefits-effect">
+		<div class="wrapper">
+			<div class="benefits__inner">
+				<div class="benefits__info benefits__info-col">
+					<h2 class="benefits__info-title">Хратит мечтать
+						о гладкой коже</h2>
+					<p class="benefits__info-subtitle">Сыворотка Ultimate Young - средство, которое действует сразу!
+					</p>
+					<ul class="benefits__info-list">
+						<li class="benefits__info-list_item">Видимый результат через 3 минуты</li>
+						<li class="benefits__info-list_item">Накопительный эффект</li>
+						<li class="benefits__info-list_item">Эффект непрерывного лифтинга</li>
+					</ul>
+					<p class="benefits__info-text">Итог: Вы неотразимы каждый день без хирургического вмешательства,
+						а ваша кожа совершенствуется каждый день.</p>
+				</div>
+				<div class="benefits__effect">
+					<span class="benefits__effect-desc benefits__effect-desc_before">до</span>
+					<img src="img/eyes.png" alt="Результат действия сыворотки" class="benefits__effect-img">
+					<span class="benefits__effect-desc benefits__effect-desc_after">после</span>
+				</div>
+			</div>
+			<div class="advantages">
+				<div class="advantages__column">
+					<div class="advantages__item advantages__item-1">
+						<p class="advantages__text">Без<br> инъекций
+							и пластики</p>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item advantages__item-2">
+						<p class="advantages__text">Без<br> дорогостоящих
+							процедур</p>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item advantages__item-3">
+						<p class="advantages__text">Без<br> изменений
+							мимики</p>
+					</div>
+				</div>
+				<div class="advantages__column">
+					<div class="advantages__item advantages__item-4">
+						<p class="advantages__text">Без<br>
+							привыкания и побочных действий</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="properties">
+		<div class="properties__top">
+			<div class="properties__top-item properties__top-left"> <span>2Х</span>
+				ЭФФЕКТ</div>
+			<div class="properties__top-item properties__top-right">Для продолжительного эффекта на вашей коже,
+				используйте
+				вместе Ultimate
+				Young крем 4ever </div>
+		</div>
+		<div class="wrapper">
+			<div class="properties__inner">
+				<h3 class="properties__title">При регулярном использовании:</h3>
+				<p class="properties__subtitle">Сыворотка Ultimate Young + Крем 4ever</p>
+				<div class="properties__body">
+					<div class="properties__column properties__column-images">
+						<span class="properties__circle"></span>
+						<div class="properties__img">
+						</div>
+					</div>
+					<div class="properties__column">
+						<div class="properties__item properties__item-1">
+							<img src="img/effect-1.png" alt="Эффект 1" class="properties__item-icon">
+							<p class="properties__item-text">Уменьшает
+								поры</p>
+						</div>
+						<div class="properties__item properties__item-2">
+							<img src="img/effect-2.png" alt="Эффект 2" class="properties__item-icon">
+							<p class="properties__item-text">Сокращает
+								мелкие морщинки</p>
+						</div>
+						<div class="properties__item properties__item-3">
+							<img src="img/effect-3.png" alt="Эффект 3" class="properties__item-icon">
+							<p class="properties__item-text">Поддерживает
+								прочность и эластичность кожи</p>
+						</div>
+					</div>
+					<div class="properties__column">
+						<div class="properties__item properties__item-4">
+							<img src="img/effect-4.png" alt="Эффект 4" class="properties__item-icon">
+							<p class="properties__item-text">Улучшает
+								цвет лица</p>
+						</div>
+						<div class="properties__item properties__item-5">
+							<img src="img/effect-5.png" alt="Эффект 5" class="properties__item-icon">
+							<p class="properties__item-text">Выравнивает
+								структуру кожи</p>
+						</div>
+						<div class="properties__item properties__item-6">
+							<img src="img/effect-6.png" alt="Эффект 6" class="properties__item-icon">
+							<p class="properties__item-text">Увлажняет
+								и придаёт свежий вид</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="discription">
+		<div class="wrapper">
+			<div class="discription__inner benefits__inner">
+				<div class="discription__info benefits__info">
+					<h2 class="discription__info-title benefits__info-title">Результат на лицо</h2>
+					<p class="discription__info-text benefits__info-text">Ultimate Young разработан на основе уже
+						ставшей
+						известной концепции NTC® -
+						Эксклюзивная концепция транспортивровки питательных веществ,
+						способствующая донесению питательных веществ именно тогда, когда они
+						необходимы, и именно туда, где они необходимы - на клеточном уровне.</p>
+					<ul class="discription__info-list benefits__info-list">
+						<li class="discription__info-list_item discription__info-list_item1 benefits__info-list_item">
+							Многоуровневая система
+							защиты кожи</li>
+						<li class="discription__info-list_item discription__info-list_item2 benefits__info-list_item">
+							Нейтрализует вещества, которые
+							отвечают за преждевременное старение кожи</li>
+						<li class="discription__info-list_item discription__info-list_item3 benefits__info-list_item">
+							Доставляет питательные вещества
+							в самые глубокие слои кожи</li>
+						<li class="discription__info-list_item discription__info-list_item4 benefits__info-list_item">
+							Защищает собственную ДНК клетки
+							кожи от вредных воздействий окружающей среды</li>
+						<li class="discription__info-list_item discription__info-list_item5 benefits__info-list_item">
+							Оптимизирует деятельность
+							клеток, улучшает регенерацию, увеличивает выработку энергии, коллагена и эластина</li>
+					</ul>
+				</div>
+				<div class="discription__stock">
+					<div class="discription__stock-heading">Закажи сыворотку<br> сейчас и получи скидку!</div>
+					<div class="discription__stock-price form__price">
+						<div class="form__price-last">Обычная цена<p class="form__price-last_many">8000р</p>
+						</div>
+						<div class="form__price-now">Цена со скидкой<p class="form__price-now_many">5000р</p>
+						</div>
+					</div>
+					<div class="discription__stock-img">
+						<img src="img/product-dist.png" alt="Крем">
+					</div>
+				</div>
+				<div class="discription__results-slider">
+					<div class="discription__results results__item">
+						<img src="img/results-1.png" alt="Результат 1">
+						<p class="results__item-text">До / после</p>
+					</div>
+					<div class="discription__results results__item">
+						<img src="img/results-2.png" alt="Результат 2">
+						<p class="results__item-text">До / после</p>
+					</div>
+					<div class="discription__results results__item">
+						<img src="img/results-3.png" alt="Результат 3">
+						<p class="results__item-text">До / после</p>
+					</div>
+					<div class="discription__results results__item">
+						<img src="img/results-4.png" alt="Результат 4">
+						<p class="results__item-text">До / после</p>
+					</div>
+					<div class="discription__results results__item">
+						<img src="img/results-5.png" alt="Результат 5">
+						<p class="results__item-text">До / после</p>
+					</div>
+					<div class="discription__results results__item">
+						<img src="img/results-6.png" alt="Результат 6">
+						<p class="results__item-text">До / после</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ingredients">
+		<div class="ingredients__container">
+			<div class="ingredients__img">
+				<img src="img/product-v.png" alt="Сыворотка Ultimate Yong">
+			</div>
+			<div class="wrapper">
+				<div class="ingredients__inner">
+					<div class="ingredients__box">
+						<h2 class="ingredients__title">В чем уникальность <span class="ingredients__title-red">Ultimate
+								Young?</span></h2>
+						<p class="ingredients__text"><span class="ingredients__text-color">Ultimate Young</span> –
+							двухфазный косметический продукт, состоящий<br>
+							из жидкости и гелеобразного компонента,<br> лечебно-декоративное<br>
+							средство. С Ultimate Young началась совершенно новая эра
+							в области Anti-Aging после 20 лет исследований с применением<br>
+							лифтинг, позволяющий получить мгновенный
+							немецких технологий.</p>
+						<div class="ingredients__price">
+							<p class="ingredients__price-heading">Закажи сейчас<br>
+								и получи скидку!</p>
+							<div class="form__price">
+								<div class="form__price-last">Обычная цена<p class="form__price-last_many">8000р</p>
+								</div>
+								<div class="form__price-now">Цена со скидкой<p class="form__price-now_many">5000р</p>
+								</div>
+							</div>
+							<button href="#popup-callback" id="#popup-order" class="form__btn popup-link">ЗАКАЗАТЬ СО
+								СКИДКОЙ</button>
+						</div>
+						<div class="ingredients__label">Ultimate Young – безоперационный экспресс-
+							результат меньше чем за 3 минуты благодаря
+							эксклюзивной концепции транспортировки
+							питательных веществ NTC.</div>
+					</div>
+					<h2 class="ingredients__title ingredients__title-center">Свойства активных
+						ингредиентов:</h2>
+					<div class="ingredients__row">
+						<div class="ingredients__item">
+							<img src="img/ingr-1.png" alt="Ингредиент помело" class="ingredients__item-img">
+							<p class="ingredients__item-title">Помело (экстракт косточек)</p>
+							<p class="ingredients__item-text">Антиоксидант, природный антибиотик</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-2.png" alt="Ингредиент экстрат корня имбиря"
+								class="ingredients__item-img">
+							<p class="ingredients__item-title">Экстракт корня имбиря</p>
+							<p class="ingredients__item-text">Улучшает кровоснабжение и лимфодренаж</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-3.png" alt="Ингредиент экстрат ананаса" class="ingredients__item-img">
+							<p class="ingredients__item-title">Экстракт ананаса фруктовый</p>
+							<p class="ingredients__item-text">Тонизирует, витаминизирует кожу,
+								мягкое отшелушивающее и отбеливающее действие</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-4.png" alt="Ингредиент Иланг-иланг" class="ingredients__item-img">
+							<p class="ingredients__item-title">Иланг-иланг</p>
+							<p class="ingredients__item-text">Сохраняет водный баланс кожи, стимулирует
+								её обновление, освежает, придает здоровый вид</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-5.png" alt="Ингредиент экстрат ванили" class="ingredients__item-img">
+							<p class="ingredients__item-title">Экстракт ванили</p>
+							<p class="ingredients__item-text">Отбеливает кожу и борется с пигментацией,
+								снимает раздражение и успокаивает, увлажняет и смягчает кожу</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-6.png" alt="Ингредиент экстрат коры сандала"
+								class="ingredients__item-img">
+							<p class="ingredients__item-title">Экстракт коры сандала</p>
+							<p class="ingredients__item-text">Обладает выраженным успокаивающим
+								и смягчающим эффектом, увлажняет и заживляет кожу, особенно
+								эффективен для сухой, потрескавшейся и обезжиренной кожи</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-7.png" alt="Ингредиент экстрат кожуры апельсина"
+								class="ingredients__item-img">
+							<p class="ingredients__item-title">Экстракт кожуры апельсина</p>
+							<p class="ingredients__item-text">Улучшает регенерацию клеток,
+								защищает кожу от вредных атмосферных воздействий</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-8.png" alt="Ингредиент экстрат яблока фруктовый"
+								class="ingredients__item-img">
+							<p class="ingredients__item-title">Экстракт яблока фруктовый</p>
+							<p class="ingredients__item-text">Легкое отбеливание и пилинг,
+								благодаря наличию комплекса фруктовых кислот</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-9.png" alt="Ингредиент масло жожоба" class="ingredients__item-img">
+							<p class="ingredients__item-title">Масло жожоба</p>
+							<p class="ingredients__item-text">Восстанавливает гидролипидную мантию на коже</p>
+						</div>
+						<div class="ingredients__item">
+							<img src="img/ingr-10.png" alt="Ингредиент зародышей пшеницы" class="ingredients__item-img">
+							<p class="ingredients__item-title">Экстракт зародышей пшеницы</p>
+							<p class="ingredients__item-text">Замедляет процессы старения,
+								укрепляет капилляры</p>
+						</div>
+					</div>
+					<div class="ingredients__col">
+						<a href="#popup-ingredients" id="#popup-ingredients" class="ingredients__btn popup-link">ПОЛНЫЙ
+							СПИСОК ИНГРЕДИЕНТОВ</a>
+						<h4 class="ingredients__heading">Способ применения:</h4>
+						<p class="ingredients__text ingredients__text-right">Чтобы получить все преимущества
+							продукта, перед
+							каждым использованием интенсивно встряхните Ultimate Young
+							(не менее 10-15 секунд), чтобы активировать его.
+							Ultimate Young нанести локально на область морщин тонким
+							слоем равномерно на необходимый участок кожи, мягко вбивая кончиками пальцев.<br>
+							Можно применять<br> на любом желаемом участке кожи, который<br>
+							Вы хотите эффективно улучшить; например,<br> наносить на лоб, веки, шею, декольте,<br>
+							носогубные складки.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="results">
+		<div class="results__heading">
+			Ultimate Young - Ваш личный секрет
+			молодости и красоты
+		</div>
+		<div class="wrapper">
+			<h2 class="results__title title">Результаты</h2>
+			<div class="results__inner">
+				<div class="results__item">
+					<img class="results__item-img" src="img/results-1.png" alt="Результат 1">
+					<p class="results__item-text">До / после</p>
+				</div>
+				<div class="results__item">
+					<img class="results__item-img" src="img/results-2.png" alt="Результат 2">
+					<p class="results__item-text">До / после</p>
+				</div>
+				<div class="results__item">
+					<img class="results__item-img" src="img/results-3.png" alt="Результат 3">
+					<p class="results__item-text">До / после</p>
+				</div>
+				<div class="results__item">
+					<img class="results__item-img" src="img/results-4.png" alt="Результат 4">
+					<p class="results__item-text">До / после</p>
+				</div>
+				<div class="results__item">
+					<img class="results__item-img" src="img/results-5.png" alt="Результат 5">
+					<p class="results__item-text">До / после</p>
+				</div>
+				<div class="results__item">
+					<img class="results__item-img" src="img/results-6.png" alt="Результат 6">
+					<p class="results__item-text">До / после</p>
+				</div>
+			</div>
+			<p class="results__adv-desc">Ultimate Young – безоперационный экспресс-лифтинг, позволяющий получить
+				мгновенный
+				результат меньше чем за 3 минуты благодаря
+				эксклюзивной концепции транспортировки
+				питательных веществ NTC.</p>
+		</div>
+		<div class="results__adv-lead products__title">
+			ТОЛЬКО РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ, <p class="results__adv-lead_sm">ПОПРОБУЙТЕ И УБЕДИТЕСЬ ПРЯМО СЕЙЧАС!</p>
+		</div>
+	</section>
+	<section class="reviews">
+		<h2 class="reviews__title title wrapper">
+			Отзывы<br> реальных клиентов
+		</h2>
+		<div class="reviews__wrapper">
+			<div class="reviews__slider slider-reviews">
+				<div class="slider-reviews__column">
+					<div class="slider-reviews__item">
+						<img src="img/reviews-1.jpg" alt="Фото клиента" class="slider-reviews__item-img">
+						<p class="slider-reviews__item-author">Ирина 37 лет</p>
+						<p class="slider-reviews__item-text">Чтобы получить все преимущества продукта, перед каждым
+							использованием интенсивно встряхните Ultimate Young
+							(не менее 10-15 секунд), чтобы активировать его.
+							Ultimate Young нанести локально на область морщин тонким
+							слоем равномерно на необходимый участок кожи, мягко вбивая
+							кончиками пальцев. Можно применять
+							на любом желаемом
+							участке кожи, который
+							Вы хотите эффективно улучшить; например,
+							наносить на лоб, веки, шею, декольте,
+							носогубные складки.</p>
+					</div>
+				</div>
+				<div class="slider-reviews__column">
+					<div class="slider-reviews__item">
+						<img src="img/reviews-2.jpg" alt="Фото клиента" class="slider-reviews__item-img">
+						<p class="slider-reviews__item-author">Людмила 41 год</p>
+						<p class="slider-reviews__item-text">Чтобы получить все преимущества продукта, перед каждым
+							использованием интенсивно встряхните Ultimate Young
+							(не менее 10-15 секунд), чтобы активировать его.
+							Ultimate Young нанести локально на область морщин тонким
+							слоем равномерно на необходимый участок кожи, мягко вбивая
+							кончиками пальцев. Можно применять
+							на любом желаемом
+							участке кожи, который
+							Вы хотите эффективно улучшить; например,
+							наносить на лоб, веки, шею, декольте,
+							носогубные складки.</p>
+					</div>
+				</div>
+				<div class="slider-reviews__column">
+					<div class="slider-reviews__item">
+						<img src="img/reviews-1.jpg" alt="Фото клиента" class="slider-reviews__item-img">
+						<p class="slider-reviews__item-author">Ирина 37 лет</p>
+						<p class="slider-reviews__item-text">Чтобы получить все преимущества продукта, перед каждым
+							использованием интенсивно встряхните Ultimate Young
+							(не менее 10-15 секунд), чтобы активировать его.
+							Ultimate Young нанести локально на область морщин тонким
+							слоем равномерно на необходимый участок кожи, мягко вбивая
+							кончиками пальцев. Можно применять
+							на любом желаемом
+							участке кожи, который
+							Вы хотите эффективно улучшить; например,
+							наносить на лоб, веки, шею, декольте,
+							носогубные складки.</p>
+					</div>
+				</div>
+				<div class="slider-reviews__column">
+					<div class="slider-reviews__item">
+						<img src="img/reviews-2.jpg" alt="Фото клиента" class="slider-reviews__item-img">
+						<p class="slider-reviews__item-author">Людмила 41 год</p>
+						<p class="slider-reviews__item-text">Чтобы получить все преимущества продукта, перед каждым
+							использованием интенсивно встряхните Ultimate Young
+							(не менее 10-15 секунд), чтобы активировать его.
+							Ultimate Young нанести локально на область морщин тонким
+							слоем равномерно на необходимый участок кожи, мягко вбивая
+							кончиками пальцев. Можно применять
+							на любом желаемом
+							участке кожи, который
+							Вы хотите эффективно улучшить; например,
+							наносить на лоб, веки, шею, декольте,
+							носогубные складки.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="certificates">
+		<div class="certificates__wrapper wrapper">
+			<h2 class="certificates__title title">Наши сертификаты</h2>
+			<div class="certificates__inner">
+				<div class="certificates__item">
+					<picture>
+						<source srcset="img/certificat-1-mob.png" media="(max-width: 540px)">
+						<img src="img/certificat-1.png" alt="Сертификат транспортивровки питательных веществ"
+							class="certificates__item-img">
+					</picture>
+					<p class="certificates__item-text">Концепция
+						Транспортировки Питательных веществ (Патент на технологию)</p>
+				</div>
+				<div class="certificates__item">
+					<picture>
+						<source srcset="img/certificat-2-mob.png" media="(max-width: 540px)">
+						<img src="img/certificat-2.png" alt="Сертификат лаборатории TÜV SÜD"
+							class="certificates__item-img">
+					</picture>
+					<p class="certificates__item-text">Независимая
+						немецкая лаборатория TÜV SÜD</p>
+				</div>
+				<div class="certificates__item">
+					<picture>
+						<source srcset="img/certificat-3-mob.png" media="(max-width: 540px)">
+						<img src="img/certificat-3.png" alt="Сертификат Кельнский лист" class="certificates__item-img">
+					</picture>
+					<p class="certificates__item-text">«Кельнский лист».
+						Контроль качества продуктов в Высшей Спортивной Школе г. Кельна</p>
+				</div>
+				<div class="certificates__item">
+					<picture>
+						<source srcset="img/certificat-4-mob.png" media="(max-width: 540px)">
+						<img src="img/certificat-4.png" alt="Сертификат HALAL" class="certificates__item-img">
+					</picture>
+					<p class="certificates__item-text">Сертификат
+						HALAL</p>
+				</div>
+				<div class="certificates__item">
+					<picture>
+						<source srcset="img/certificat-5-mob.png" media="(max-width: 540px)">
+						<img src="img/certificat-5.png" alt="Международный сертификат
+						качества" class="certificates__item-img">
+					</picture>
+					<p class="certificates__item-text">Международный сертификат
+						качества</p>
+				</div>
+				<div class="certificates__item">
+					<picture>
+						<source srcset="img/certificat-6-mob.png" media="(max-width: 540px)">
+						<img src="img/certificat-6.png" alt="Сертификат LIST" class="certificates__item-img">
+					</picture>
+					<p class="certificates__item-text">Люксембургский институт
+						науки и технологии LIST</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="banner banner__bg-bottom">
+		<div class="wrapper">
+			<div class="banner__inner banner__inner-bottom">
+				<div class="banner__info">
+					<h1 class="banner__info-title">Поверните<br> время <span
+							class="banner__info-title_red">вспять!</span>
+					</h1>
+					<p class="banner__info-text">Испытайте неповторимые ощущения совершенства
+						и моментальный эффект на Вашей коже</p>
+					<img src="img/product.png" alt="Сыворотка и крем" class="banner__info-img">
+				</div>
+				<div class="banner__form">
+					<form class="banner__form-body form">
+						<h2 class="form__title">Внимание.Акция!</h2>
+						<p class="form__text">Осталось<span class="form__text-number">13</span> акционных упаковок
+							Ultimate Young (сыворотка)</p>
+						<div class="form__timer">
+							<div class="form__timer-section">
+								<span class="form__timer-time" id="days2"></span>
+								<span class="form__timer-time" id="hours2"></span>
+								<span class="form__timer-time" id="minutes2"></span>
+								<span class="form__timer-time" id="seconds2"></span>
+							</div>
+							<ul class="form__timer-date">
+								<li class="form__timer-date_list">Дней</li>
+								<li class="form__timer-date_list">Часов</li>
+								<li class="form__timer-date_list">Минут</li>
+								<li class="form__timer-date_list">Секунд</li>
+							</ul>
+						</div>
+						<div class="form__price">
+							<div class="form__price-last">Обычная цена<p class="form__price-last_many">8000р</p>
+							</div>
+							<div class="form__price-now">Цена со скидкой<p class="form__price-now_many">5000р</p>
+							</div>
+						</div>
+						<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
+						<input type="tel" name="tel" id="tel" class="form__input" placeholder="Ваш номер">
+						<a href="#popup-order" id="#popup-order" class="form__btn popup-link">ЗАКАЗАТЬ СО
+							СКИДКОЙ</a>
+						<label class="form__check">
+							<input class="form__check-checkbox" type="checkbox" name="check" id="check" checked>
+							<span class="form__check-style"></span>
+							Я даю согласие на обработку персональных данных
+						</label>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__inner">
+					<div class="footer__contact">
+						<a href="#" class="footer__logo">
+							<img src="img/logo-footer.png" alt="Логотип Fitline">
+						</a>
+						<div class="footer__info">
+							<a href="tel:88008888888 " class="footer__info-phone header__phone">8 800 888 88 88</a>
+							<a href="#popup-callback" id="#popup-callback"
+								class="footer__info-btn header__btn popup-link">Обратный
+								звонок</a>
+						</div>
+					</div>
+					<p class="footer__copy footer__copy">Продолжая использовать наш сайт, вы даете согласие
+						на обработку файлов Cookies и других пользовательских данных,
+						в соответствии с Политикой конфиденциальности.</p>
+					<p class="footer__copy">ИП лалала А.А. ОГРНИП 317010500000048 ИНН 010511295801
+						г. Краснодар, ул. лалала,50.</p>
+					<a href="#" class="footer__copy footer__copy-mob">ИП лалала А.А. ОГРНИП 317010500000048 ИНН
+						010511295801</a>
+					<a href="#" class="footer__copy footer__copy-mob">Политика конфеденциальности</a>
+				</div>
+			</div>
+		</footer>
+	</section>
+
+	<div id="popup-order" class="popup popup-order">
+		<div class="popup__body popup-order__body">
+			<div class="popup-order__content">
+				<a href="##" class="popup__close popup-order__close close-popup">&times;</a>
+				<h2 class="popup-order__title">Отлично!</h2>
+				<p class="popup-order__text">Ваша заявка принята.
+					Ожидайте звонка оператора.</p>
+				<img class="popup-order__img" src="img/popup-img.png" alt="Сыворотка и крем">
+			</div>
+		</div>
+	</div>
+	<div id="popup-callback" class="popup-callback popup">
+		<div class="popup__body">
+			<div class="popup-callback__content popup-order__content">
+				<a href="##" class="popup__close close-popup">&times;</a>
+				<form action="" class="popup-callback__form form">
+					<h2 class="form__title">Оставьте заявку
+						прямо сейчас</h2>
+					<p class="popup-callback__form-text form__text">Наш оператор свяжется с Вами для оформления заказа
+					</p>
+					<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
+					<input type="tel" name="tel" id="tel" class="popup-callback__form-input form__input"
+						placeholder="Ваш номер">
+					<a href="#popup-order" id="#popup-order"
+						class="popup-callback__form-btn form__btn popup-link">ЗАКАЗАТЬ
+						СО
+						СКИДКОЙ</a>
+					<label class="form__check">
+						<input class="form__check-checkbox" type="checkbox" name="check" id="check" checked>
+						<span class="form__check-style"></span>
+						Я даю согласие на обработку персональных данных
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="popup-ingredients" class="popup popup-ingredients">
+		<div class="popup__body">
+			<div class="popup-ingredients__content">
+				<a href="##" class="popup__close close-popup">&times;</a>
+				<h2 class="popup-ingredients__title">Список активных игредиентов</h2>
+				<div class="popup-ingredients__box" id="scrollbar" data-simplebar>
+					<p class="popup-ingredients__text">Экстракт жимолости душистой – антибактериальные,
+						очищающие,
+						противовоспалительные свойства.</p>
+					<p class="popup-ingredients__text">Экстракт жимолости японской – натуральный консервант,
+						противогрибковое действие.</p>
+					<p class="popup-ingredients__text">Экстракт корня имбиря – улучшает кровоснабжение и лимфодренаж.
+					</p>
+					<p class="popup-ingredients__text">Коэнзим Q 10 – улучшает образование энергии клетками, уменьшает
+						глубину морщин.</p>
+					<p class="popup-ingredients__text">Гиалуроновая кислота – мощное увлажняющее действие, регенерация.
+					</p>
+					<p class="popup-ingredients__text">Арабский мирт (Гугул) – клеточная детоксикация.</p>
+					<p class="popup-ingredients__text">Экстракт ананаса фруктовый – тонизирует, витаминизирует кожу,
+						мягкое отшелушивающее и отбеливающее действие.</p>
+					<p class="popup-ingredients__text">Иланг-иланг – сохраняет водный баланс кожи, стимулирует
+						её обновление, освежает, придает здоровый вид, способствует нормализации работы сальных желез.
+					</p>
+					<p class="popup-ingredients__text">Помело (экстракт косточек) – антиоксидант, природный антибиотик.
+					</p>
+					<p class="popup-ingredients__text">Акация низбегающая – очищает, препятствует образованию
+						опухолевых клеток на коже.</p>
+					<p class="popup-ingredients__text">Кремний – улучшает упругость кожи, светоотражающий эффект.
+						Масло жожоба – восстанавливает гидролипидную мантию на коже.</p>
+					<p class="popup-ingredients__text">Экстракт кокоса фруктовый – натуральная антимикробная добавка.
+					</p>
+					<p class="popup-ingredients__text">Экстракт зерен кофе арабика – тонизирует кожу.</p>
+					<p class="popup-ingredients__text">Экстракт куркумы – улучшает цвет лица, антиоксидант.</p>
+					<p class="popup-ingredients__text">Пассифлора (фруктовый экстракт) – антиоксидант,
+						очищающее действие.</p>
+					<p class="popup-ingredients__text">Экстракт розы – возвращает коже здоровый тон, освежает, придает
+						сияние, помогает осветлить темные круги под глазами.</p>
+					<p class="popup-ingredients__text">Экстракт малины фруктовый – антикуперозное средство, дает
+						противовоспалительный эффект, сглаживает покраснения,
+						успокаивает кожный покров.</p>
+					<p class="popup-ingredients__text">Экстракт ванили – отбеливает кожу и борется с пигментацией,
+						снимает раздражение и успокаивает, увлажняет и смягчает кожу.</p>
+					<p class="popup-ingredients__text">Экстракт ячменя обыкновенного – тонизирует и ухаживает
+						за зрелой кожей.</p>
+					<p class="popup-ingredients__text">Экстракт зародышей пшеницы – замедляет процессы старения,
+						укрепляет капилляры.</p>
+					<p class="popup-ingredients__text">Экстракт кожуры лимона – отбеливающее, антипигментное действие.
+					</p>
+					<p class="popup-ingredients__text">Экстракт дыни (канталупа) – мощное увлажняющее действие.</p>
+					<p class="popup-ingredients__text">Экстракт абрикоса фруктовый – делает кожу бархатистой
+						и нежной, возвращает здоровый вид и сияние.</p>
+					<p class="popup-ingredients__text">Экстракт яблока фруктовый – легкое отбеливание и пилинг,
+						благодаря наличию комплекса фруктовых кислот.</p>
+					<p class="popup-ingredients__text">Экстракт коры сандала – обладает выраженным успокаивающим
+						и смягчающим эффектом, увлажняет и заживляет кожу, особенно
+						эффективен для сухой, потрескавшейся и обезжиренной кожи
+						и ухода за нежной кожей вокруг глаз.</p>
+					<p class="popup-ingredients__text">Экстракт редиса (лейконосток) – противовоспалительное действие.
+					</p>
+					<p class="popup-ingredients__text">Дубильный экстракт коры осинообразного тополя – бактерицидные
+						и фунгицидные свойства.</p>
+					<p class="popup-ingredients__text">Экстракт чайного листа Camelia – антиоксидант, защита
+						от воздействия окружающей среды.</p>
+					<p class="popup-ingredients__text">Экстракт кожуры апельсина – улучшает регенерацию клеток,
+						защищает кожу от вредных атмосферных воздействий.</p>
+					<p class="popup-ingredients__text">Витамин Е – для защитыот повреждающего действия ультрафиолета
+						и кислородных радикалов.</p>
+					<p class="popup-ingredients__text">Масло семян подсолнечника – активизирует жизненные процессы
+						на клеточном уровне, защищает.</p>
+					<p class="popup-ingredients__text">Мочевина – улучшает свойства косметических средств, увлажняет,
+						отшелушивает, заживляет, улучшает всасывание, защищает.</p>
+					<p class="popup-ingredients__text">Аллонтоин (окопник) – многофункциональный компонент,
+						стимулирует обновление кожи и слущивание омертвевших клеток,
+						уменьшает и суживает поры.</p>
+					<p class="popup-ingredients__text">Пальмовая кислота – защищает кожу, восстанавливает
+						гидролипидную мантию на коже.</p>
+					<p class="popup-ingredients__text">Лецитин – способствует восстановлению барьерных функций кожи
+						и препятствует испарению влаги.</p>
+					<p class="popup-ingredients__text">Oризанол – сильный антиоксидант.</p>
+					<p class="popup-ingredients__text">Эрготионеин – аминокислота с очень мощной антиоксидантной
+						активностью широкого спектра действия, защита мембран
+						и генетического материала клетки.</p>
+					<p class="popup-ingredients__text">Гликосфинголипиды (смесь липидов и сахаров) – система доставки
+						активных водо и жирорастворимых веществ в глубокие слои кожи.
+						Способствуют восстановлению эпидермального барьера
+						и повышению увлажнённости и упругости кожи.</p>
+				</div>
+				<a href="#popup-callback" id="#popup-callback"
+					class="popup-ingredients__btn form__btn popup-link">ЗАКАЗАТЬ СО
+					СКИДКОЙ</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/simplebar.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/popups.js"></script>
+
+</body>
+
+</html>
