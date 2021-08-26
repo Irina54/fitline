@@ -66,9 +66,15 @@
 							<div class="form__price-now">Цена со скидкой<p class="form__price-now_many">5000р</p>
 							</div>
 						</div>
-						<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
-						<input type="tel" name="tel" id="tel" class="form__input" placeholder="Ваш номер">
-						<a href="#popup-order" id="#popup-order" class="form__btn popup-link">ЗАКАЗАТЬ СО
+
+						<input type="hidden" name="email_address[]" value="mail:">
+						<input type="hidden" name="form_subject" value="Заявка с сайта...">
+
+						<input type="text" data-validate-field="name" name="name" id="name" class="form__input"
+							placeholder="Ваше имя">
+						<input type="tel" data-validate-field="tel" name="tel" id="tel" class="form__input"
+							placeholder="Ваш номер">
+						<a href="#popup-order" class="form__btn popup-link">ЗАКАЗАТЬ СО
 							СКИДКОЙ</a>
 						<label class="form__check">
 							<input class="form__check-checkbox" type="checkbox" name="check" id="check" checked>
@@ -331,8 +337,8 @@
 								<div class="form__price-now">Цена со скидкой<p class="form__price-now_many">5000р</p>
 								</div>
 							</div>
-							<button href="#popup-callback" id="#popup-order" class="form__btn popup-link">ЗАКАЗАТЬ СО
-								СКИДКОЙ</button>
+							<a href="#popup-callback" class="form__btn popup-link">ЗАКАЗАТЬ СО
+								СКИДКОЙ</a>
 						</div>
 						<div class="ingredients__label">Ultimate Young – безоперационный экспресс-
 							результат меньше чем за 3 минуты благодаря
@@ -637,12 +643,12 @@
 							<div class="form__price-now">Цена со скидкой<p class="form__price-now_many">5000р</p>
 							</div>
 						</div>
-						<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
-						<input type="tel" name="tel" id="tel" class="form__input" placeholder="Ваш номер">
-						<a href="#popup-order" id="#popup-order" class="form__btn popup-link">ЗАКАЗАТЬ СО
+						<input type="text" name="name" id="name2" class="form__input" placeholder="Ваше имя">
+						<input type="tel" name="tel" id="tel2" class="form__input" placeholder="Ваш номер">
+						<a href="#popup-order" class="form__btn popup-link">ЗАКАЗАТЬ СО
 							СКИДКОЙ</a>
 						<label class="form__check">
-							<input class="form__check-checkbox" type="checkbox" name="check" id="check" checked>
+							<input class="form__check-checkbox" type="checkbox" name="check" id="check2" checked>
 							<span class="form__check-style"></span>
 							Я даю согласие на обработку персональных данных
 						</label>
@@ -681,7 +687,7 @@
 	<div id="popup-order" class="popup popup-order">
 		<div class="popup__body popup-order__body">
 			<div class="popup-order__content">
-				<a href="##" class="popup__close popup-order__close close-popup">&times;</a>
+				<a href="#" class="popup__close popup-order__close close-popup">&times;</a>
 				<h2 class="popup-order__title">Отлично!</h2>
 				<p class="popup-order__text">Ваша заявка принята.
 					Ожидайте звонка оператора.</p>
@@ -692,21 +698,20 @@
 	<div id="popup-callback" class="popup-callback popup">
 		<div class="popup__body">
 			<div class="popup-callback__content popup-order__content">
-				<a href="##" class="popup__close close-popup">&times;</a>
-				<form action="" class="popup-callback__form form">
+				<a href="#" class="popup__close close-popup">&times;</a>
+				<form class="popup-callback__form form">
 					<h2 class="form__title">Оставьте заявку
 						прямо сейчас</h2>
 					<p class="popup-callback__form-text form__text">Наш оператор свяжется с Вами для оформления заказа
 					</p>
-					<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
-					<input type="tel" name="tel" id="tel" class="popup-callback__form-input form__input"
+					<input type="text" name="name" id="name3" class="form__input" placeholder="Ваше имя">
+					<input type="tel" name="tel" id="tel3" class="popup-callback__form-input form__input"
 						placeholder="Ваш номер">
-					<a href="#popup-order" id="#popup-order"
-						class="popup-callback__form-btn form__btn popup-link">ЗАКАЗАТЬ
+					<a href="#popup-order" class="popup-callback__form-btn form__btn popup-link">ЗАКАЗАТЬ
 						СО
 						СКИДКОЙ</a>
 					<label class="form__check">
-						<input class="form__check-checkbox" type="checkbox" name="check" id="check" checked>
+						<input class="form__check-checkbox" type="checkbox" name="check" id="check3" checked>
 						<span class="form__check-style"></span>
 						Я даю согласие на обработку персональных данных
 					</label>
@@ -717,7 +722,7 @@
 	<div id="popup-ingredients" class="popup popup-ingredients">
 		<div class="popup__body">
 			<div class="popup-ingredients__content">
-				<a href="##" class="popup__close close-popup">&times;</a>
+				<a href="#" class="popup__close close-popup">&times;</a>
 				<h2 class="popup-ingredients__title">Список активных игредиентов</h2>
 				<div class="popup-ingredients__box" id="scrollbar" data-simplebar>
 					<p class="popup-ingredients__text">Экстракт жимолости душистой – антибактериальные,
@@ -801,8 +806,7 @@
 						Способствуют восстановлению эпидермального барьера
 						и повышению увлажнённости и упругости кожи.</p>
 				</div>
-				<a href="#popup-callback" id="#popup-callback"
-					class="popup-ingredients__btn form__btn popup-link">ЗАКАЗАТЬ СО
+				<a href="#popup-callback" class="popup-ingredients__btn form__btn popup-link">ЗАКАЗАТЬ СО
 					СКИДКОЙ</a>
 			</div>
 		</div>
@@ -814,6 +818,9 @@
 	<script src="js/simplebar.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/popups.js"></script>
+	<script src="js/inputmask.min.js"></script>
+	<script src="js/just-validate.min.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 
