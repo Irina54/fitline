@@ -1,4 +1,4 @@
-let date = new Date('oct 01 2021 00:00:00');
+let date = new Date('july 01 2023 00:00:00');
 function counts() {
 	let now = new Date();
 	let gap = date - now;
